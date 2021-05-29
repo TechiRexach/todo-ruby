@@ -1,6 +1,12 @@
-<h1>Editing List</h1>
+<h1>Edit To-Do item</h1>
+<br/>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <%= render 'form', list: @list %>
+  </div>
+</div>
 
-<%= render 'form', list: @list %>
+<br/>
 
-<%= link_to 'Show', @list %> |
+<% link_to 'Show', @list %> 
 <%= link_to 'Back', lists_path %>
